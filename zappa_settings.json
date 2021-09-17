@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "aws_region": "eu-west-2",
+        "django_settings": "aspiretest.settings",
+        "profile_name": "default",
+        "project_name": "aspiret",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-pfzkvgnme"
+    }
+}
