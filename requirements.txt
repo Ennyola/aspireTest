@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 argcomplete==1.12.3
 asgiref==3.4.1
 boto3==1.18.43
@@ -35,3 +36,15 @@ urllib3==1.26.6
 Werkzeug==0.16.1
 wsgi-request-logger==0.4.6
 zappa==0.53.0
+=======
+asgiref==3.4.1
+certifi==2021.5.30
+charset-normalizer==2.0.5
+Django==3.2.7
+djangorestframework==3.12.4
+idna==3.2
+pytz==2021.1
+requests==2.26.0
+sqlparse==0.4.2
+urllib3==1.26.6
+>>>>>>> 3a343178eaa3839a788a1bb887615495292d46b5

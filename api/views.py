@@ -2,6 +2,10 @@ import requests
 from django.conf import settings
 from django.contrib.auth import login
 from django.contrib.auth.models import User
+<<<<<<< HEAD
+=======
+from requests.api import post
+>>>>>>> 3a343178eaa3839a788a1bb887615495292d46b5
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
