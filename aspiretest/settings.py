@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -142,3 +143,6 @@ ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
 HEADERS = {
     "Authorization": f"Bearer {ACCESS_TOKEN}"
 }
+
+
+django_heroku.settings(locals())
