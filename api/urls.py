@@ -1,8 +1,10 @@
 from os import name
 from django.urls import path, include
-from .views import CharacterView, CharacterQuotesView, SaveFavoriteCharacter, Signup, Login, FavouriteCharactersView, SaveFavouritesQuotes
+from rest_framework import views
+from .views import CharacterView, CharacterQuotesView, SaveFavoriteCharacter, Signup, Login, FavouriteCharactersView, SaveFavouritesQuotes,index
 
 urlpatterns = [
+     path('', index),
     path('characters/', CharacterView.as_view(), name="characters"),
     path('characters/<slug:id>/quotes/',
          CharacterQuotesView.as_view(), name="quotes"),

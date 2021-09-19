@@ -1,3 +1,4 @@
+from django.http.response import HttpResponse
 import requests
 from django.conf import settings
 from django.contrib.auth import login
@@ -15,6 +16,9 @@ from .models import FavouriteCharacters, FavouriteQuotes
 
 
 # Create your views here.
+
+def index(request):
+    return HttpResponse("Homepage")
 
 # This returns a list of characters
 class CharacterView(APIView):
